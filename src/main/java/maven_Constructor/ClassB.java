@@ -24,10 +24,15 @@ public class ClassB {
 		objA.show_k(); //Expected output is : K
 		
 		
-		/* I am calling parameterized constructor to demonstrate "constructor overloading" */
+		/* I am calling parameterized constructor to demonstrate "constructor overloading". In this case I need to create a
+         new object of ClassA. If we go with the same object (i.e. objA), it throws error "Duplicate local variable objA"  */
 		
-		ClassA obj = new ClassA(6);
-		obj.show();
+		ClassA objB = new ClassA(6);
+		objB.show();
+	
+		/* Q: Is there a way to kill "objA" and then reinitialize for the demo of constrcutor overloading??*/
+		
+		
 }
 
 }
